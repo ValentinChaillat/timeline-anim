@@ -1,0 +1,99 @@
+
+header
+{
+
+}
+body{
+  height: 100%;
+background-color: black;
+}
+footer
+{
+
+}
+/* ------------------------------------------------------------------ */
+
+section .hero-img{
+opacity: 0;
+float: left;
+height: 700px;
+animation: chargement1-4 ease-in 4s;
+animation-iteration-count: 1;
+}
+
+/* titre */
+h1{
+  color: white;
+  font-size: 6em;
+}
+.titre{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  animation-delay: 4s;
+  animation-duration: 1s;
+  animation-name: chargement3;
+}
+.time{
+  opacity: 0;
+
+  animation-delay: 1s;
+  animation-duration: 4s;
+  animation-name: chargement2;
+}
+.all-line{
+  opacity: 0;
+  animation-delay: 2s;
+  animation-duration: 3s;
+  animation-name: chargement2;
+}
+.line{
+  margin-left: 143px;
+
+}
+.l{
+  position: absolute;
+  background-color: white;
+  width: 7px;
+  height: 35px;
+  margin-left: 151px;
+  top: 80px;
+}
+.logo{
+  position: absolute;
+  left:5%;
+  height: 100px;
+
+  animation-duration: 6s;
+  animation-name: chargement5;
+}
+/* animation */
+@keyframes chargement1-4 {
+  0%{ opacity: 0;}
+  25%{opacity: 1;}
+  75%{ opacity: 1;}
+  100%{opacity: 0;}
+}
+@keyframes chargement2 {
+  0%{ opacity: 0;}
+  25%{opacity: 1;}
+  85%{opacity: 1;}
+  100%{opacity: 0;}
+}
+
+@keyframes chargement3 {
+  0%{
+      left: 50%;
+      top: 50%;
+    }
+  90%{
+        left: 10%;
+        top: 10%;
+      }
+}
+@keyframes chargement5 {
+  0%{ opacity: 0;}
+  70%{ opacity: 0;}
+  100%{opacity: 1;}
+}
